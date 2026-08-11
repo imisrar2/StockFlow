@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StockFlow – AI Metadata Studio</title>
+<title>StockFlow â€“ AI Metadata Studio</title>
 <meta name="description" content="Professional AI metadata generation studio for Adobe Stock and Shutterstock contributors." />
 <style>
 /* =========================================================================
-   StockFlow — Premium AI Metadata Studio
+   StockFlow â€” Premium AI Metadata Studio
    A clean, workflow-focused creative workspace.
    ========================================================================= */
 
@@ -242,7 +242,7 @@ a { color: var(--accent); text-decoration: none; }
   height: 100%;
 }
 
-/* Sidebar toggle button — centered on the divider */
+/* Sidebar toggle button â€” centered on the divider */
 .sidebar-toggle {
   position: absolute; left: var(--left-w); top: 50%; transform: translate(-50%, -50%);
   width: 24px; height: 48px; border-radius: 8px; background: var(--panel); border: 1px solid var(--border);
@@ -252,7 +252,7 @@ a { color: var(--accent); text-decoration: none; }
 .sidebar-toggle:hover { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 4px 12px -2px rgba(37,99,235,0.4); }
 .sidebar-toggle svg { width: 14px; height: 14px; transition: transform 0.25s var(--ease); }
 .sidebar-toggle.collapsed svg { transform: rotate(180deg); }
-/* Focus-visible rings — keyboard accessibility */
+/* Focus-visible rings â€” keyboard accessibility */
 .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .input:focus-visible, .textarea:focus-visible, .select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .switch input:focus-visible + .slider-tg { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 999px; }
@@ -272,7 +272,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 .sidebar-body { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 18px 16px 24px; }
 
-/* Collapsible section — elevated card */
+/* Collapsible section â€” elevated card */
 .section {
   background: var(--panel);
   border: 1px solid var(--border-soft);
@@ -300,7 +300,7 @@ a { color: var(--accent); text-decoration: none; }
 
 /* ===== SIDEBAR STATES ===== */
 
-/* COLLAPSED STATE (76px) — icons only */
+/* COLLAPSED STATE (76px) â€” icons only */
 .sidebar.mode-collapsed { overflow: visible; }
 .sidebar.mode-collapsed .sidebar-body { padding: 14px 8px 20px; overflow: visible; }
 .sidebar.mode-collapsed .section { padding: 0; margin-bottom: 8px; border: none; box-shadow: none; background: transparent; }
@@ -579,7 +579,7 @@ a { color: var(--accent); text-decoration: none; }
 .sfly-strat-card .ss-toggle svg { width: 13px; height: 13px; transition: transform 0.22s var(--ease); }
 .sfly-strat-card.expanded .ss-toggle svg { transform: rotate(180deg); }
 .sfly-strat-card .ss-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-/* Expandable detail — uses grid-template-rows for smooth height animation */
+/* Expandable detail â€” uses grid-template-rows for smooth height animation */
 .sfly-strat-card .ss-detail {
   display: grid; grid-template-rows: 0fr;
   transition: grid-template-rows 0.22s var(--ease);
@@ -614,7 +614,7 @@ a { color: var(--accent); text-decoration: none; }
 .upload-zone::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(440px 120px at 50% 0%, var(--accent-muted), transparent); opacity: 0.5; border-radius: var(--radius-lg); }
 .upload-zone:hover { border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow-card-hover); }
 .upload-zone.drag { border-color: var(--accent); background: var(--accent-muted); color: var(--accent); box-shadow: 0 0 0 4px var(--accent-ring), var(--shadow-md); }
-/* Compact state — collapsed header bar after files uploaded */
+/* Compact state â€” collapsed header bar after files uploaded */
 .upload-zone.compact {
   padding: 34px 40px; min-height: auto; display: flex; flex-direction: row; align-items: center;
   justify-content: flex-start; gap: 24px; text-align: left;
@@ -661,7 +661,7 @@ a { color: var(--accent); text-decoration: none; }
 .action-bar .ab-ext .select { width: auto; min-width: 130px; padding: 6px 30px 6px 10px; font-size: 12px; }
 .action-bar .ab-ext-hint { font-size: 11.5px; color: var(--fg-muted); font-weight: 400; }
 
-/* Progress section — separate compact card */
+/* Progress section â€” separate compact card */
 .progress-section { display: none; margin: 10px 32px 0; background: var(--panel); border: 1px solid var(--border-soft); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 12px 16px; }
 .progress-section.show { display: block; }
 .progress-section .ps-row1 { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
@@ -700,14 +700,14 @@ a { color: var(--accent); text-decoration: none; }
 .asset-card:hover { border-color: var(--border); box-shadow: 0 16px 40px -12px rgba(15,23,42,0.25), 0 6px 16px -8px rgba(37,99,235,0.1); transform: translateY(-4px); }
 .asset-card.processing { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), var(--shadow-card); }
 
-/* Image preview — 16:9, rounded top corners */
+/* Image preview â€” 16:9, rounded top corners */
 .ac-thumb { position: relative; width: 100%; aspect-ratio: 16/9; background: var(--bg-2); overflow: hidden; }
 .ac-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s var(--ease); }
 .asset-card:hover .ac-thumb img { transform: scale(1.03); }
 .ac-thumb .ph { width: 100%; height: 100%; display: grid; place-items: center; color: var(--fg-dim); font-size: 13px; font-weight: 700; letter-spacing: 0.1em; background: linear-gradient(135deg, var(--bg-2), var(--panel-2)); }
-/* File type badge — bottom-left of image */
+/* File type badge â€” bottom-left of image */
 .ac-filetype { position: absolute; bottom: 10px; left: 10px; padding: 3px 9px; border-radius: 6px; background: rgba(15,23,42,0.78); backdrop-filter: blur(8px); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
-/* Status badge — top-right of image */
+/* Status badge â€” top-right of image */
 .ac-status { position: absolute; top: 12px; right: 12px; display: flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: 999px; background: rgba(15,23,42,0.78); backdrop-filter: blur(10px); color: #fff; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: opacity 0.2s var(--ease), transform 0.2s var(--ease); }
 .asset-card:hover .ac-status { opacity: 0; transform: scale(0.9); pointer-events: none; }
 .ac-status .sd { width: 6px; height: 6px; border-radius: 50%; background: #fff; }
@@ -719,24 +719,24 @@ a { color: var(--accent); text-decoration: none; }
 @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
 .ac-progress { position: absolute; bottom: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-soft)); transition: width 0.3s var(--ease); }
 
-/* ===== Card body — premium desktop settings panel feel ===== */
+/* ===== Card body â€” premium desktop settings panel feel ===== */
 .ac-body { padding: 18px 20px 16px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
 
-/* Filename — small muted text below image */
+/* Filename â€” small muted text below image */
 .ac-fname { font-size: 13px; color: var(--fg-dim); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 7px; }
 .ac-fname .qdot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 0 2px rgba(255,255,255,0.2); }
 
-/* Field group — label + field container */
+/* Field group â€” label + field container */
 .ac-field { display: flex; flex-direction: column; gap: 6px; }
 .ac-field-label { font-size: 12px; font-weight: 600; color: var(--fg-dim); display: flex; align-items: center; justify-content: space-between; gap: 8px; letter-spacing: 0.01em; }
 .ac-field-label .ac-lbl-count { font-size: 10px; font-weight: 600; color: var(--fg-dim); padding: 1px 7px; border-radius: 999px; background: var(--bg-2); }
 
-/* Field container — dark input background, rounded, subtle border, hover glow */
+/* Field container â€” dark input background, rounded, subtle border, hover glow */
 .ac-field-box { position: relative; border-radius: 12px; background: var(--bg-2); border: 1px solid transparent; box-shadow: inset 0 2px 5px rgba(15, 23, 42, 0.05); transition: all 0.15s var(--ease); }
 .ac-field-box:hover { border-color: var(--border); }
 .ac-field-box:focus-within { background: var(--panel); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2); }
 .ac-field-box.copied { background: var(--panel); border-color: var(--success); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); }
-/* Read-only textarea inside field box — fixed height, scrollable */
+/* Read-only textarea inside field box â€” fixed height, scrollable */
 .ac-field-box textarea {
   width: 100%; background: transparent; border: none; outline: none; resize: none;
   color: var(--fg); font-family: inherit; font-size: 14px; font-weight: 600; line-height: 1.5;
@@ -750,7 +750,7 @@ a { color: var(--accent); text-decoration: none; }
 .ac-field-box textarea::-webkit-scrollbar-track { background: transparent; }
 .ac-field-box textarea::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 .ac-field-box textarea::-webkit-scrollbar-thumb:hover { background: var(--fg-dim); }
-/* Copy button inside field box — right side */
+/* Copy button inside field box â€” right side */
 .ac-field-copy { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; color: var(--fg-dim); background: transparent; border: 1px solid transparent; cursor: pointer; transition: all 0.12s var(--ease); opacity: 0.6; }
 .ac-field-copy:hover { background: var(--accent-muted); color: var(--accent); border-color: rgba(13,110,253,0.15); opacity: 1; }
 .ac-field-copy.copied { background: var(--success-soft); color: var(--success); border-color: rgba(16,185,129,0.2); opacity: 1; }
@@ -758,7 +758,7 @@ a { color: var(--accent); text-decoration: none; }
 /* Empty placeholder text inside textarea */
 .ac-field-box textarea::placeholder { color: var(--fg-dim); font-style: italic; }
 
-/* CATEGORY — colored badge with emoji */
+/* CATEGORY â€” colored badge with emoji */
 .ac-cat-badge {
   display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px;
   font-size: 13px; font-weight: 700; color: var(--fg);
@@ -770,7 +770,7 @@ a { color: var(--accent); text-decoration: none; }
 .ac-cat-badge.empty { color: var(--fg-dim); font-style: italic; font-weight: 500; }
 .ac-cat-badge.empty .ac-cat-emoji { opacity: 0.5; }
 
-/* Skeleton loading state — animated placeholder bars for generating cards */
+/* Skeleton loading state â€” animated placeholder bars for generating cards */
 .ac-skeleton { display: flex; flex-direction: column; gap: 8px; padding: 2px 0; }
 .ac-sk-line { height: 10px; border-radius: 4px; background: linear-gradient(90deg, var(--bg-2) 0%, var(--border-soft) 50%, var(--bg-2) 100%); background-size: 200% 100%; animation: ac-shimmer 1.4s linear infinite; }
 .ac-sk-line.title { height: 16px; border-radius: 6px; }
@@ -783,7 +783,7 @@ a { color: var(--accent); text-decoration: none; }
 .ac-sk-field { border-radius: 10px; background: var(--bg-2); border: 1px solid var(--border-soft); padding: 12px 13px; display: flex; flex-direction: column; gap: 7px; }
 @keyframes ac-shimmer { 0%{background-position: 200% 0;} 100%{background-position: -200% 0;} }
 
-/* Generating overlay on the image — blur + centered spinner */
+/* Generating overlay on the image â€” blur + centered spinner */
 .ac-thumb.generating img { filter: blur(2px) brightness(0.7); transform: scale(1.03); }
 .ac-gen-spinner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 38px; height: 38px; border-radius: 50%; border: 3px solid rgba(255,255,255,0.25); border-top-color: #fff; animation: ac-spin 0.8s linear infinite; z-index: 5; }
 @keyframes ac-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
@@ -798,7 +798,7 @@ a { color: var(--accent); text-decoration: none; }
 .ac-error .ae-msg { flex: 1; font-size: 12px; color: var(--fg); line-height: 1.5; word-break: break-word; }
 .ac-error .ae-msg b { color: var(--danger); font-weight: 700; }
 
-/* ACTIONS footer — Compact Hover Menu */
+/* ACTIONS footer â€” Compact Hover Menu */
 .ac-foot { position: absolute; top: 12px; right: 12px; display: flex; gap: 6px; opacity: 0; pointer-events: none; transition: opacity 0.2s var(--ease), transform 0.2s var(--ease); transform: translateY(-4px); z-index: 10; margin: 0; padding: 0; border: none; }
 .asset-card:hover .ac-foot { opacity: 1; pointer-events: auto; transform: translateY(0); }
 .ac-foot-btn { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border-radius: 10px; background: rgba(15,23,42,0.85); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); color: #fff; cursor: pointer; transition: all 0.2s var(--ease); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
@@ -865,7 +865,7 @@ a { color: var(--accent); text-decoration: none; }
 .meta-field .textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
 /* Keyword chips */
 .kw-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; min-height: 48px; background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius-sm); margin-bottom: 8px; align-items: flex-start; }
-.kw-chips.empty::before { content: "No keywords yet — add some below"; color: var(--fg-dim); font-size: 11.5px; font-style: italic; }
+.kw-chips.empty::before { content: "No keywords yet â€” add some below"; color: var(--fg-dim); font-size: 11.5px; font-style: italic; }
 .kw-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px 4px 11px; background: var(--accent-muted); color: var(--accent); border: 1px solid rgba(37,99,235,0.2); border-radius: 999px; font-size: 11.5px; font-weight: 600; cursor: grab; transition: all 0.12s; }
 .kw-chip:hover { background: rgba(37,99,235,0.16); }
 .kw-chip.dragging { opacity: 0.4; cursor: grabbing; }
@@ -969,7 +969,7 @@ a { color: var(--accent); text-decoration: none; }
 .api-status-banner.warn .asb-text { color: var(--warning); }
 .api-status-banner.err .asb-text { color: var(--danger); }
 .api-status-banner .asb-sub { font-size: 10.5px; color: var(--fg-muted); font-weight: 500; margin-top: 1px; }
-/* Key row inside API settings — richer than the old key-row */
+/* Key row inside API settings â€” richer than the old key-row */
 .api-key-row { display: flex; align-items: center; gap: 11px; padding: 11px 14px; border-radius: var(--radius-sm); background: var(--bg-2); border: 1px solid var(--border-soft); margin-bottom: 6px; font-size: 12px; transition: all 0.15s var(--ease); }
 .api-key-row:hover { border-color: var(--border); }
 .api-key-row.active-key { border-color: var(--accent); background: var(--accent-muted); box-shadow: 0 2px 8px -2px rgba(37,99,235,0.2); }
@@ -1239,7 +1239,7 @@ a { color: var(--accent); text-decoration: none; }
 [data-theme="dark"] .about-view { background: linear-gradient(180deg, #080d1a 0%, var(--bg) 25%, var(--bg) 100%); }
 .ab-container { max-width: 1240px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 1; }
 
-/* Hero — split layout */
+/* Hero â€” split layout */
 .ab-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding: 72px 0 48px; }
 .ab-hero-text .ab-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: var(--accent-muted); color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
 .ab-hero-text h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 12px; line-height: 1.1; background: linear-gradient(135deg, var(--fg) 0%, var(--accent) 50%, var(--fg) 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientShine 5s linear infinite; }
@@ -1374,7 +1374,7 @@ a { color: var(--accent); text-decoration: none; }
   <div class="about-view" id="aboutView">
     <div class="ab-container">
 
-      <!-- Hero — Centered & App-Focused -->
+      <!-- Hero â€” Centered & App-Focused -->
       <section class="ab-hero" style="grid-template-columns: 1fr; text-align: center; padding-top: 100px;">
         <div class="ab-hero-text" style="max-width: 760px; margin: 0 auto;">
           <div class="ab-badge" style="margin-bottom: 24px;">About StockFlow</div>
@@ -1409,7 +1409,7 @@ a { color: var(--accent); text-decoration: none; }
         </style>
         <div class="ab-profile ab-profile-main">
           <div class="ab-profile-avatar ab-profile-avatar-img">
-            <img src="israr atal.png" alt="Israr Atal" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="data:image/jpeg;base64,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" alt="Israr Atal" style="width: 100%; height: 100%; object-fit: cover; display: block;">
           </div>
           <div class="ab-profile-info ab-profile-info-main">
             <h3 style="font-size: 36px; margin-bottom: 12px;">Israr Atal</h3>
@@ -1419,7 +1419,7 @@ a { color: var(--accent); text-decoration: none; }
               <span class="abr">Web Developer</span>
             </div>
             <div class="ab-story">
-              <p style="margin-bottom: 12px; font-size: 14.5px;">As a designer and stock contributor, I spent countless hours writing metadata manually. Titles, descriptions, keywords—every upload required the same repetitive process. It was exhausting.</p>
+              <p style="margin-bottom: 12px; font-size: 14.5px;">As a designer and stock contributor, I spent countless hours writing metadata manually. Titles, descriptions, keywordsâ€”every upload required the same repetitive process. It was exhausting.</p>
               <p style="margin-bottom: 0; font-size: 14.5px;">I built StockFlow to solve my own problem first. By integrating Google Gemini AI and a professional batch workflow, it completely changed how I upload. Now, I'm sharing it with the community.</p>
             </div>
             <div class="ab-skills-label">Technologies Used</div>
@@ -1495,7 +1495,7 @@ a { color: var(--accent); text-decoration: none; }
         <div class="abf-creator">Created by Israr Atal</div>
         <div class="abf-roles">Designed for Professional Stock Contributors</div>
         <div class="abf-version">Version 1.0</div>
-        <div class="abf-copy">Copyright © StockFlow</div>
+        <div class="abf-copy">Copyright Â© StockFlow</div>
       </footer>
 
     </div>
@@ -1530,7 +1530,7 @@ a { color: var(--accent); text-decoration: none; }
             </div>
             <div class="platform-lock-badge" id="platformLockBadge">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              Locked — Export CSV to switch
+              Locked â€” Export CSV to switch
             </div>
           </div>
         </div>
@@ -1767,7 +1767,7 @@ a { color: var(--accent); text-decoration: none; }
   <div class="meta-modal" id="metaModal">
     <div class="meta-head">
       <div class="mh-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
-      <div class="mh-title"><b>Edit Metadata</b><small id="metaFname">—</small></div>
+      <div class="mh-title"><b>Edit Metadata</b><small id="metaFname">â€”</small></div>
       <button class="btn icon ghost" id="metaClose" title="Close (Esc)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     </div>
     <div class="meta-body">
@@ -1793,7 +1793,7 @@ a { color: var(--accent); text-decoration: none; }
 <script>
 "use strict";
 /* =========================================================================
-   StockFlow — Application Logic
+   StockFlow â€” Application Logic
    A clean, workflow-focused metadata studio.
    ========================================================================= */
 
@@ -1806,58 +1806,58 @@ const STORE = "kv";
 const TITLE_MIN = 30, DESC_MIN = 50, KW_MIN = 15;
 function categoriesFor(){ return state.settings.platform === "shutterstock" ? SHUTTERSTOCK_CATEGORIES : ADOBE_CATEGORIES; }
 
-/* Category → emoji + color mapping for professional colored badges.
+/* Category â†’ emoji + color mapping for professional colored badges.
    Maps both Adobe Stock and Shutterstock official categories to a recognizable
    emoji + accent color so the badge stands out from keyword text. */
 const CATEGORY_STYLE = {
   // Adobe Stock
-  "Animals": { emoji: "🐾", color: "#f59e0b" },
-  "Buildings and Architecture": { emoji: "🏢", color: "#6366f1" },
-  "Business": { emoji: "💼", color: "#0ea5e9" },
-  "Drinks": { emoji: "🍹", color: "#ec4899" },
-  "The Environment": { emoji: "🌿", color: "#16a34a" },
-  "States of Mind": { emoji: "🧠", color: "#a855f7" },
-  "Food": { emoji: "🍔", color: "#ef4444" },
-  "Graphic Resources": { emoji: "🎨", color: "#8b5cf6" },
-  "Hobbies and Leisure": { emoji: "🎯", color: "#f97316" },
-  "Industry": { emoji: "🏭", color: "#64748b" },
-  "Landscapes": { emoji: "🏔️", color: "#14b8a6" },
-  "Lifestyle": { emoji: "🌟", color: "#eab308" },
-  "People": { emoji: "👥", color: "#3b82f6" },
-  "Plants and Flowers": { emoji: "🌸", color: "#22c55e" },
-  "Culture and Religion": { emoji: "🏛️", color: "#d97706" },
-  "Science": { emoji: "🔬", color: "#06b6d4" },
-  "Society": { emoji: "🌍", color: "#0891b2" },
-  "Sports": { emoji: "⚽", color: "#f43f5e" },
-  "Technology": { emoji: "⚙️", color: "#3b82f6" },
-  "Transport": { emoji: "🚗", color: "#64748b" },
-  "Travel": { emoji: "✈️", color: "#0ea5e9" },
+  "Animals": { emoji: "ðŸ¾", color: "#f59e0b" },
+  "Buildings and Architecture": { emoji: "ðŸ¢", color: "#6366f1" },
+  "Business": { emoji: "ðŸ’¼", color: "#0ea5e9" },
+  "Drinks": { emoji: "ðŸ¹", color: "#ec4899" },
+  "The Environment": { emoji: "ðŸŒ¿", color: "#16a34a" },
+  "States of Mind": { emoji: "ðŸ§ ", color: "#a855f7" },
+  "Food": { emoji: "ðŸ”", color: "#ef4444" },
+  "Graphic Resources": { emoji: "ðŸŽ¨", color: "#8b5cf6" },
+  "Hobbies and Leisure": { emoji: "ðŸŽ¯", color: "#f97316" },
+  "Industry": { emoji: "ðŸ­", color: "#64748b" },
+  "Landscapes": { emoji: "ðŸ”ï¸", color: "#14b8a6" },
+  "Lifestyle": { emoji: "ðŸŒŸ", color: "#eab308" },
+  "People": { emoji: "ðŸ‘¥", color: "#3b82f6" },
+  "Plants and Flowers": { emoji: "ðŸŒ¸", color: "#22c55e" },
+  "Culture and Religion": { emoji: "ðŸ›ï¸", color: "#d97706" },
+  "Science": { emoji: "ðŸ”¬", color: "#06b6d4" },
+  "Society": { emoji: "ðŸŒ", color: "#0891b2" },
+  "Sports": { emoji: "âš½", color: "#f43f5e" },
+  "Technology": { emoji: "âš™ï¸", color: "#3b82f6" },
+  "Transport": { emoji: "ðŸš—", color: "#64748b" },
+  "Travel": { emoji: "âœˆï¸", color: "#0ea5e9" },
   // Shutterstock
-  "Abstract": { emoji: "🖌️", color: "#8b5cf6" },
-  "Animals/Wildlife": { emoji: "🦁", color: "#f59e0b" },
-  "Arts": { emoji: "🎭", color: "#ec4899" },
-  "Backgrounds/Textures": { emoji: "🖼️", color: "#64748b" },
-  "Beauty/Fashion": { emoji: "💄", color: "#f43f5e" },
-  "Business/Finance": { emoji: "💰", color: "#0ea5e9" },
-  "Celebrities": { emoji: "⭐", color: "#eab308" },
-  "Education": { emoji: "📚", color: "#3b82f6" },
-  "Food and Drink": { emoji: "🍽️", color: "#ef4444" },
-  "Healthcare/Medical": { emoji: "🏥", color: "#16a34a" },
-  "Holidays": { emoji: "🎉", color: "#dc2626" },
-  "Industrial": { emoji: "🏗️", color: "#64748b" },
-  "Interiors": { emoji: "🛋️", color: "#a855f7" },
-  "Miscellaneous": { emoji: "📦", color: "#64748b" },
-  "Nature": { emoji: "🌿", color: "#16a34a" },
-  "Objects": { emoji: "📷", color: "#0891b2" },
-  "Parks/Outdoor": { emoji: "🌳", color: "#22c55e" },
-  "Religion": { emoji: "🕊️", color: "#d97706" },
-  "Signs/Symbols": { emoji: "🔢", color: "#64748b" },
-  "Sports/Recreation": { emoji: "🏅", color: "#f43f5e" },
-  "Transportation": { emoji: "🚂", color: "#64748b" },
-  "Vintage": { emoji: "📻", color: "#92400e" },
+  "Abstract": { emoji: "ðŸ–Œï¸", color: "#8b5cf6" },
+  "Animals/Wildlife": { emoji: "ðŸ¦", color: "#f59e0b" },
+  "Arts": { emoji: "ðŸŽ­", color: "#ec4899" },
+  "Backgrounds/Textures": { emoji: "ðŸ–¼ï¸", color: "#64748b" },
+  "Beauty/Fashion": { emoji: "ðŸ’„", color: "#f43f5e" },
+  "Business/Finance": { emoji: "ðŸ’°", color: "#0ea5e9" },
+  "Celebrities": { emoji: "â­", color: "#eab308" },
+  "Education": { emoji: "ðŸ“š", color: "#3b82f6" },
+  "Food and Drink": { emoji: "ðŸ½ï¸", color: "#ef4444" },
+  "Healthcare/Medical": { emoji: "ðŸ¥", color: "#16a34a" },
+  "Holidays": { emoji: "ðŸŽ‰", color: "#dc2626" },
+  "Industrial": { emoji: "ðŸ—ï¸", color: "#64748b" },
+  "Interiors": { emoji: "ðŸ›‹ï¸", color: "#a855f7" },
+  "Miscellaneous": { emoji: "ðŸ“¦", color: "#64748b" },
+  "Nature": { emoji: "ðŸŒ¿", color: "#16a34a" },
+  "Objects": { emoji: "ðŸ“·", color: "#0891b2" },
+  "Parks/Outdoor": { emoji: "ðŸŒ³", color: "#22c55e" },
+  "Religion": { emoji: "ðŸ•Šï¸", color: "#d97706" },
+  "Signs/Symbols": { emoji: "ðŸ”¢", color: "#64748b" },
+  "Sports/Recreation": { emoji: "ðŸ…", color: "#f43f5e" },
+  "Transportation": { emoji: "ðŸš‚", color: "#64748b" },
+  "Vintage": { emoji: "ðŸ“»", color: "#92400e" },
 };
 function categoryStyle(name){
-  if(!name) return { emoji: "📁", color: "#64748b" };
+  if(!name) return { emoji: "ðŸ“", color: "#64748b" };
   // Direct match
   if(CATEGORY_STYLE[name]) return CATEGORY_STYLE[name];
   // Fuzzy match by lowercase includes
@@ -1865,7 +1865,7 @@ function categoryStyle(name){
   for(const key in CATEGORY_STYLE){
     if(lower.includes(key.toLowerCase().split(" ")[0])) return CATEGORY_STYLE[key];
   }
-  return { emoji: "📁", color: "#64748b" };
+  return { emoji: "ðŸ“", color: "#64748b" };
 }
 
 /* ---------- State ---------- */
@@ -1875,7 +1875,7 @@ const state = {
   drawerId: null,
   settings: {
     platform: "adobe",
-    model: "gemini-2.0-flash",
+    model: "gemini-3.5-flash",
     rotateKeys: true,
     retryFailed: true,
     concurrency: 2,
@@ -2030,7 +2030,26 @@ const gemini = {
       if(res.status===429){ keyObj.status="exhausted";keyObj.lastError="Quota exceeded";renderApiManagerKeys();updateApiPill(); if(retries<state.apiKeys.length) return this.generate(prompt,asset,retries+1); throw new Error("All API keys exhausted (quota)."); }
       if(res.status===400||res.status===403){ const d=await res.json().catch(()=>({})); const msg=d?.error?.message||"Invalid request"; if(/API key not valid|API_KEY_INVALID/i.test(msg)){ keyObj.status="invalid";keyObj.lastError="Invalid key";renderApiManagerKeys();updateApiPill(); if(retries<state.apiKeys.length) return this.generate(prompt,asset,retries+1); throw new Error("No valid API key available."); } throw new Error(msg); }
       if(!res.ok){ const d=await res.json().catch(()=>({})); throw new Error(d?.error?.message||`HTTP ${res.status}`); }
-      const data=await res.json(); const text=data?.candidates?.[0]?.content?.parts?.[0]?.text||"";
+      const data=await res.json();
+      // Gemini 3.5+ models may return multiple parts (thinking + response).
+      // Find the part that contains the actual JSON content.
+      const allParts = data?.candidates?.[0]?.content?.parts || [];
+      let text = "";
+      // Try to find a part with valid JSON first
+      for(const p of allParts){
+        if(!p.text) continue;
+        const t = p.text.trim();
+        // Skip thinking/reasoning parts (they usually start with text, not { or [)
+        if(t.startsWith("{") || t.startsWith("[") || /^```/.test(t)){
+          text = t; break;
+        }
+      }
+      // Fallback: if no JSON-like part found, try the last non-empty text part
+      if(!text){
+        for(let i = allParts.length - 1; i >= 0; i--){
+          if(allParts[i].text?.trim()){ text = allParts[i].text.trim(); break; }
+        }
+      }
       if(!text) throw new Error("Empty response from Gemini");
       return text;
     } catch(e){ if(e.name==="TypeError"&&/fetch|network/i.test(e.message)){ if(retries<2){ await sleep(1200); return this.generate(prompt,asset,retries+1); } } throw e; }
@@ -2057,7 +2076,7 @@ const METADATA_STRATEGIES = {
   balanced: {
     name: "Balanced SEO",
     desc: "Recommended for most Adobe Stock uploads.",
-    prompt: `GENERATION STRATEGY — Balanced SEO:
+    prompt: `GENERATION STRATEGY â€” Balanced SEO:
 - Use natural, commercially useful titles that read well to humans.
 - Write balanced descriptions covering both visible elements and commercial context.
 - Generate well-rounded keywords covering literal, conceptual, and commercial terms.
@@ -2067,8 +2086,8 @@ const METADATA_STRATEGIES = {
   keyword_rich: {
     name: "Keyword Rich",
     desc: "Generate additional relevant keyword variations.",
-    prompt: `GENERATION STRATEGY — Keyword Rich:
-- Generate MORE keyword variations than usual — include synonyms, related terms, and variant phrasings.
+    prompt: `GENERATION STRATEGY â€” Keyword Rich:
+- Generate MORE keyword variations than usual â€” include synonyms, related terms, and variant phrasings.
 - Maximize keyword relevance and coverage for the asset's subject matter.
 - Best suited for icons, vectors, and design collections where broad discoverability matters.
 - Still remove duplicates and avoid spam or irrelevant terms.
@@ -2077,7 +2096,7 @@ const METADATA_STRATEGIES = {
   seo_precision: {
     name: "SEO Precision",
     desc: "Optimized for search ranking and discoverability.",
-    prompt: `GENERATION STRATEGY — SEO Precision:
+    prompt: `GENERATION STRATEGY â€” SEO Precision:
 - Create strong, search-focused titles that include the primary search term early.
 - Order keywords strictly by search importance and commercial intent (most valuable first).
 - Prioritize maximum discoverability while maintaining strict relevance to the visible content.
@@ -2087,7 +2106,7 @@ const METADATA_STRATEGIES = {
   editorial: {
     name: "Editorial",
     desc: "Neutral wording for editorial assets.",
-    prompt: `GENERATION STRATEGY — Editorial:
+    prompt: `GENERATION STRATEGY â€” Editorial:
 - Use neutral, factual wording throughout all metadata.
 - Write literal, journalistic descriptions without marketing language or subjective adjectives.
 - Select keywords that literally and factually describe what is visible in the asset.
@@ -2095,7 +2114,7 @@ const METADATA_STRATEGIES = {
 - Suitable for news, documentary, and editorial stock content.`
   },
   icon_collection: {
-    name: "🎨 Icon Collection",
+    name: "ðŸŽ¨ Icon Collection",
     desc: "Specialized multi-stage analysis for icon sheets and icon packs.",
     isSpecial: true,
     helperText: "Specialized AI analysis for icon collections. Every icon is analyzed individually before generating one highly optimized metadata package for the entire collection.",
@@ -2123,18 +2142,18 @@ ${s.platform==="adobe"?"- Follow Adobe Stock best practices strictly.":""}
 MULTI-STAGE ANALYSIS WORKFLOW:
 You MUST perform the following stages mentally before generating metadata:
 
-STAGE 1 — DETECT EVERY ICON:
+STAGE 1 â€” DETECT EVERY ICON:
 Scan the entire icon sheet. Identify every visible icon individually.
 Examples of what you might find: battery, solar panel, wind turbine, cloud, hospital, calendar, shopping cart, camera, user, heart, leaf, lock, truck, phone, etc.
 
-STAGE 2 — UNDERSTAND EACH ICON:
+STAGE 2 â€” UNDERSTAND EACH ICON:
 Understand what each detected icon represents and its meaning.
 
-STAGE 3 — IDENTIFY THE COLLECTION THEME:
+STAGE 3 â€” IDENTIFY THE COLLECTION THEME:
 Determine the overall theme of the entire collection.
 Examples: Business, Healthcare, Finance, Technology, Education, Travel, Food, Transportation, Renewable Energy, Weather, Communication, Security, Commerce, User Interface, etc.
 
-STAGE 4 — GENERATE ONE OPTIMIZED METADATA PACKAGE:
+STAGE 4 â€” GENERATE ONE OPTIMIZED METADATA PACKAGE:
 Combine your understanding of every icon into a single, highly optimized metadata set representing the entire collection.
 
 METADATA GENERATION RULES:
@@ -2172,7 +2191,7 @@ KEYWORDS (HIGHEST PRIORITY):
 - Maximum ${s.platform==="shutterstock"?Math.min(s.kwMax,50):s.kwMax} keywords (minimum ${KW_MIN}). Never exceed ${s.platform==="shutterstock"?Math.min(s.kwMax,50):s.kwMax} keywords.${s.platform==="shutterstock"?" Never exceed 50 total.":""}
 - The final keyword list should feel carefully curated by an experienced ${platformName} contributor.
 
-CATEGORY (STRICT — MUST OBEY):
+CATEGORY (STRICT â€” MUST OBEY):
 - Choose exactly ONE category from ${platformName}'s official category list. Never invent, abbreviate, or paraphrase a category name.
 - Do NOT output a keyword as the category. The category must be one of these EXACT values:
   ${cats.map(c=>`"${c}"`).join(", ")}.
@@ -2245,7 +2264,7 @@ LENGTH RULES (MUST OBEY):
 - Description: write a description between ${targetDescMin} and ${s.descMax} characters. Do NOT exceed ${s.descMax} characters.
 - Keywords: generate up to ${s.kwMax} keywords (minimum ${KW_MIN}). Never exceed ${s.kwMax} keywords.
 
-CATEGORY RULES (STRICT — MUST OBEY):
+CATEGORY RULES (STRICT â€” MUST OBEY):
 - Choose exactly ONE category from Adobe Stock's official category list (provided below). Never invent, abbreviate, or paraphrase a category name.
 - Do NOT output a keyword as the category. The category must be one of these EXACT values:
   ${cats.map(c=>`"${c}"`).join(", ")}.
@@ -2322,7 +2341,7 @@ LENGTH RULES (MUST OBEY):
 - Description: write a description between ${targetDescMin} and ${s.descMax} characters. Do NOT exceed ${s.descMax} characters.
 - Keywords: up to ${Math.min(s.kwMax, 50)} keywords (minimum ${KW_MIN}). Never exceed ${Math.min(s.kwMax, 50)} keywords. Never exceed 50 total.
 
-CATEGORY RULES (STRICT — MUST OBEY):
+CATEGORY RULES (STRICT â€” MUST OBEY):
 - Choose exactly ONE category from Shutterstock's official category list (provided below). Never invent, abbreviate, or paraphrase a category name.
 - Do NOT output a keyword as the category. The category must be one of these EXACT values:
   ${cats.map(c=>`"${c}"`).join(", ")}.
@@ -2449,7 +2468,7 @@ function validateAsset(asset){
     }
   }
   const cats=categoriesFor();
-  if(category&&!cats.includes(category)) issues.push({sev:"warn",field:"category",msg:`"${category}" is not an official ${isShutterstock?"Shutterstock":"Adobe Stock"} category — must be one of the exact official values`,fix:"regenerate"});
+  if(category&&!cats.includes(category)) issues.push({sev:"warn",field:"category",msg:`"${category}" is not an official ${isShutterstock?"Shutterstock":"Adobe Stock"} category â€” must be one of the exact official values`,fix:"regenerate"});
   return issues;
 }
 function computeQuality(asset){
@@ -2466,7 +2485,23 @@ function computeQuality(asset){
 }
 
 /* ---------- Metadata Generation ---------- */
-async function generateForAsset(asset){
+function extractJSON(raw){
+  // Strip markdown fences
+  let s = raw.replace(/```json\s*/gi,"").replace(/```\s*/g,"").trim();
+  // Find the first { and extract balanced braces
+  const start = s.indexOf("{");
+  if(start === -1) return null;
+  let depth = 0, end = -1;
+  for(let i = start; i < s.length; i++){
+    if(s[i] === "{") depth++;
+    else if(s[i] === "}") { depth--; if(depth === 0){ end = i; break; } }
+  }
+  if(end === -1) return null;
+  try { return JSON.parse(s.substring(start, end + 1)); } catch(e){ return null; }
+}
+
+async function generateForAsset(asset, _retryCount){
+  const retryCount = _retryCount || 0;
   const prompt=buildPrompt();
   asset.status="processing"; asset.progress=20; asset.error=null;
   renderGallery(); updateStats();
@@ -2474,9 +2509,12 @@ async function generateForAsset(asset){
     asset.progress=40; renderGallery();
     const raw=await gemini.generate(prompt,asset);
     asset.progress=80; renderGallery();
-    let parsed;
-    try{ const clean=raw.replace(/^```json\s*/i,"").replace(/^```\s*/,"").replace(/```\s*$/,"").trim(); parsed=JSON.parse(clean); }
-    catch(e){ const m=raw.match(/\{[\s\S]*\}/); if(m)parsed=JSON.parse(m[0]); else throw new Error("Could not parse AI response as JSON"); }
+    const parsed = extractJSON(raw);
+    if(!parsed){
+      // Auto-retry once if JSON parse failed (thinking models sometimes produce bad output)
+      if(retryCount < 1){ return generateForAsset(asset, retryCount + 1); }
+      throw new Error("Could not parse AI response as JSON");
+    }
     let keywords=Array.isArray(parsed.keywords)?parsed.keywords:(typeof parsed.keywords==="string"?parsed.keywords.split(",").map(s=>s.trim()).filter(Boolean):[]);
     keywords=keywords.map(k=>String(k).trim()).filter(Boolean);
     keywords=applyKeywordFilters(keywords);
@@ -2521,7 +2559,28 @@ async function startBatch(assetsToProcess){
   targets.forEach(a=>{if(a.status!=="done")a.status="queued";});
   $("#progressSection").classList.add("show"); $("#psBar").classList.remove("complete"); $("#psPct").classList.remove("complete"); $("#psTitle").textContent="Generating Metadata..."; $("#btnGenerateAll").disabled=true; renderGallery();
   const concurrency=clamp(state.settings.concurrency,1,10); const total=targets.length; let done=0; const startTime=Date.now();
-  async function worker(){ while(state.queue.length&&!state.cancelled){ if(state.paused){await sleep(300);continue;} const asset=state.queue.shift(); if(!asset)break; await generateForAsset(asset); done++; updateProgressDisplay(done,total); } }
+  async function worker(){
+    while(state.queue.length && !state.cancelled){
+      if(state.paused){ await sleep(300); continue; }
+      const asset=state.queue.shift();
+      if(!asset) break;
+      // Try up to 3 times (1 initial + 2 retries)
+      const MAX_RETRIES = 2;
+      for(let attempt = 0; attempt <= MAX_RETRIES; attempt++){
+        await generateForAsset(asset);
+        if(asset.status !== "error") break; // success â€” move on
+        if(attempt < MAX_RETRIES){
+          // Reset for retry
+          asset.status = "queued"; asset.progress = 0; asset.error = null;
+          renderGallery();
+          await sleep(1500);
+        }
+        // After final attempt, leave it as error and move to next
+      }
+      done++;
+      updateProgressDisplay(done, total);
+    }
+  }
   const workers=[]; for(let i=0;i<concurrency;i++) workers.push(worker());
   await Promise.all(workers);
   state.processing=false; $("#btnGenerateAll").disabled=false;
@@ -2529,7 +2588,7 @@ async function startBatch(assetsToProcess){
   else { $("#psBar").classList.add("complete"); $("#psPct").classList.add("complete"); $("#psTitle").textContent="Complete"; updateProgressDisplay(total,total,true); }
   if(!state.cancelled){ renderGallery(); }
 }
-function formatEta(sec){ if(!isFinite(sec)||sec<0)return"—"; if(sec<60)return Math.ceil(sec)+"s"; const m=Math.floor(sec/60),s=Math.ceil(sec%60); return m+"m "+s+"s"; }
+function formatEta(sec){ if(!isFinite(sec)||sec<0)return"â€”"; if(sec<60)return Math.ceil(sec)+"s"; const m=Math.floor(sec/60),s=Math.ceil(sec%60); return m+"m "+s+"s"; }
 function pauseBatch(){ state.paused=true; $("#btnPause").style.display="none"; $("#btnResume").style.display="grid"; $("#psTitle").textContent="Paused"; }
 function resumeBatch(){ state.paused=false; $("#btnPause").style.display="grid"; $("#btnResume").style.display="none"; $("#psTitle").textContent="Generating Metadata..."; }
 function cancelBatch(){ state.cancelled=true; state.paused=false; state.queue=[]; state.assets.forEach(a=>{if(a.status==="queued"||a.status==="processing")a.status="pending";}); $("#btnGenerateAll").disabled=false; state.processing=false; $("#psFill").style.width="0%"; $("#psPct").textContent="0%"; $("#psPct").classList.remove("complete"); $("#psBar").classList.remove("complete");
@@ -2590,7 +2649,7 @@ function doExport(type){
       const content="\uFEFF"+csv;
       downloadBlob(content,fname,"text/csv;charset=utf-8");
       saveCsvHistory(fname, content, done.length);
-      toast("CSV exported",`${done.length} rows · ${state.settings.platform==="shutterstock"?"Shutterstock":"Adobe Stock"}`,"success");
+      toast("CSV exported",`${done.length} rows Â· ${state.settings.platform==="shutterstock"?"Shutterstock":"Adobe Stock"}`,"success");
       // Unlock platform after CSV is downloaded
       unlockPlatform();
     }
@@ -2743,7 +2802,7 @@ function renderGallery(){
     const cs=categoryStyle(m.category);
     const catBadge = hasCat
       ? `<div class="ac-cat-badge" style="border-color:${cs.color}33;background:${cs.color}14;"><span class="ac-cat-emoji">${cs.emoji}</span><span class="ac-cat-name" style="color:${cs.color};">${escapeHtml(m.category)}</span></div>`
-      : `<div class="ac-cat-badge empty"><span class="ac-cat-emoji">📁</span><span class="ac-cat-name">No category</span></div>`;
+      : `<div class="ac-cat-badge empty"><span class="ac-cat-emoji">ðŸ“</span><span class="ac-cat-name">No category</span></div>`;
     const qc=a.quality!=null?a.quality:0;
     const qcolor=qc>=70?"var(--success)":qc>=40?"var(--warning)":"var(--danger)";
     const qdot=a.meta?`<span class="qdot" style="background:${qcolor}"></span>`:"";
@@ -2754,7 +2813,7 @@ function renderGallery(){
     const regenSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>';
     const copyAllSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
     const trashSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>';
-    // Skeleton loading state for generating cards — field-box style skeletons
+    // Skeleton loading state for generating cards â€” field-box style skeletons
     const skeletonHtml = `
       <div class="ac-field">
         <div class="ac-field-label"><span>Title</span></div>
@@ -2773,8 +2832,8 @@ function renderGallery(){
         <div class="ac-sk-field" style="flex-direction:row;align-items:center;gap:8px;padding:8px 14px;"><div class="ac-sk-line" style="width:18px;height:18px;border-radius:50%;"></div><div class="ac-sk-line" style="width:100px;height:12px;"></div></div>
       </div>`;
     // Error state
-    const errorBanner = isError ? `<div class="ac-error"><div class="ae-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div class="ae-msg"><b>Metadata generation failed.</b> ${a.error?escapeHtml(a.error.length>140?a.error.slice(0,140)+"…":a.error):"Please try again."}</div></div>` : "";
-    // Metadata fields — only render real metadata when done/edited; skeleton while generating; nothing when pending
+    const errorBanner = isError ? `<div class="ac-error"><div class="ae-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div class="ae-msg"><b>Metadata generation failed.</b> ${a.error?escapeHtml(a.error.length>140?a.error.slice(0,140)+"â€¦":a.error):"Please try again."}</div></div>` : "";
+    // Metadata fields â€” only render real metadata when done/edited; skeleton while generating; nothing when pending
     let metaSections;
     if(isGenerating){
       metaSections = skeletonHtml;
@@ -2807,9 +2866,9 @@ function renderGallery(){
         </div>`;
     } else {
       // Pending state (not yet generating, no metadata)
-      metaSections = `<div class="ac-field"><div class="ac-field-box"><textarea readonly rows="1" placeholder="Awaiting metadata…"></textarea></div></div>`;
+      metaSections = `<div class="ac-field"><div class="ac-field-box"><textarea readonly rows="1" placeholder="Awaiting metadataâ€¦"></textarea></div></div>`;
     }
-    // Action bar: 4 equally sized buttons — Edit, Regenerate, Copy All, Remove
+    // Action bar: 4 equally sized buttons â€” Edit, Regenerate, Copy All, Remove
     return `<div class="asset-card ${sel} ${a.status==="processing"?"processing":""}" data-id="${a.id}">
       <div class="ac-thumb ${isGenerating?"generating":""}">${thumb}
         <div class="ac-filetype">${escapeHtml(a.ext.toUpperCase())}</div>
@@ -2837,19 +2896,19 @@ function updateApiPill(){
   const pill=$("#apiPill"); const txt=$("#apiPillTxt"); pill.className="api-pill";
   if(state.apiKeys.length===0){
     txt.textContent="API Not Connected"; pill.classList.add("err");
-    pill.title="No API key configured — click to manage API settings";
+    pill.title="No API key configured â€” click to manage API settings";
   } else {
     const valid=state.apiKeys.filter(k=>k.status!=="invalid"&&k.status!=="exhausted").length;
     const total=state.apiKeys.length;
     if(valid===0){
       txt.textContent="API Not Connected"; pill.classList.add("err");
-      pill.title=`${total} key(s) added, none valid — click to manage API settings`;
+      pill.title=`${total} key(s) added, none valid â€” click to manage API settings`;
     } else if(valid<total){
       txt.textContent="Partial Configuration"; pill.classList.add("warn");
-      pill.title=`${valid}/${total} keys valid — click to manage API settings`;
+      pill.title=`${valid}/${total} keys valid â€” click to manage API settings`;
     } else {
       txt.textContent="API Connected"; pill.classList.add("ok");
-      pill.title=`${valid}/${total} keys valid — click to manage API settings`;
+      pill.title=`${valid}/${total} keys valid â€” click to manage API settings`;
     }
   }
   // Sync any open API settings modal's key list + status
@@ -2857,7 +2916,7 @@ function updateApiPill(){
   if(apiModalBody){ renderApiKeysList(); updateApiStatusSummary(); }
 }
 function renderApiManagerKeys(){
-  // Legacy hook — kept for gemini.generate() error handler which calls renderApiManagerKeys().
+  // Legacy hook â€” kept for gemini.generate() error handler which calls renderApiManagerKeys().
   // Forwards to the new API Settings modal key list if open, otherwise no-op (the navbar pill
   // status is updated separately via updateApiPill).
   const newList=document.querySelector("#apiKeysList");
@@ -2866,7 +2925,7 @@ function renderApiManagerKeys(){
   if(!list) return;
   if(state.apiKeys.length===0){ list.innerHTML=`<div class="gallery-empty" style="padding:24px;"><p>No API keys added yet.</p></div>`; return; }
   const activeKey=gemini.nextKey();
-  list.innerHTML=state.apiKeys.map((k,i)=>{ const masked=k.key.length>12?k.key.slice(0,6)+"••••"+k.key.slice(-4):k.key; const isActive=activeKey&&activeKey.key===k.key; return `<div class="key-row ${isActive?"active-key":""}"><span class="kstat ${k.status}"></span><div style="flex:1;min-width:0;"><div class="kval">${escapeHtml(masked)} ${isActive?'<span style="color:var(--accent);font-weight:700;">● ACTIVE</span>':''}</div><div class="kmeta"><span>Status: <b style="color:${k.status==='valid'?'var(--success)':k.status==='invalid'?'var(--danger)':k.status==='exhausted'?'var(--warning)':'var(--fg-muted)'}">${k.status}</b></span><span>Uses: ${k.uses||0}</span></div>${k.lastError?`<div class="kerr">${escapeHtml(k.lastError)}</div>`:""}</div><button class="btn icon sm ghost" data-del-key="${i}" style="color:var(--fg-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>`; }).join("");
+  list.innerHTML=state.apiKeys.map((k,i)=>{ const masked=k.key.length>12?k.key.slice(0,6)+"â€¢â€¢â€¢â€¢"+k.key.slice(-4):k.key; const isActive=activeKey&&activeKey.key===k.key; return `<div class="key-row ${isActive?"active-key":""}"><span class="kstat ${k.status}"></span><div style="flex:1;min-width:0;"><div class="kval">${escapeHtml(masked)} ${isActive?'<span style="color:var(--accent);font-weight:700;">â— ACTIVE</span>':''}</div><div class="kmeta"><span>Status: <b style="color:${k.status==='valid'?'var(--success)':k.status==='invalid'?'var(--danger)':k.status==='exhausted'?'var(--warning)':'var(--fg-muted)'}">${k.status}</b></span><span>Uses: ${k.uses||0}</span></div>${k.lastError?`<div class="kerr">${escapeHtml(k.lastError)}</div>`:""}</div><button class="btn icon sm ghost" data-del-key="${i}" style="color:var(--fg-muted);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>`; }).join("");
 }
 
 /* ---------- Metadata Editor Modal ---------- */
@@ -2888,12 +2947,12 @@ function renderMetadataModal(){
   // LEFT column - image preview + info
   const thumb=a.thumb?`<img src="${a.thumb}" alt="" />`:`<div class="ph">${a.ext.toUpperCase()}</div>`;
   // Get image dimensions if available
-  let resolution = "—";
+  let resolution = "â€”";
   if(a.thumb && ["jpg","jpeg","png"].includes(a.ext)){
     const img = new Image();
     img.src = a.thumb;
-    if(img.complete && img.naturalWidth) resolution = `${img.naturalWidth} × ${img.naturalHeight}`;
-    else { img.onload = ()=>{ const el=document.getElementById("metaResolution"); if(el) el.textContent=`${img.naturalWidth} × ${img.naturalHeight}`; }; }
+    if(img.complete && img.naturalWidth) resolution = `${img.naturalWidth} Ã— ${img.naturalHeight}`;
+    else { img.onload = ()=>{ const el=document.getElementById("metaResolution"); if(el) el.textContent=`${img.naturalWidth} Ã— ${img.naturalHeight}`; }; }
   }
   $("#metaLeft").innerHTML=`
     <div class="meta-preview">${thumb}</div>
@@ -2901,7 +2960,7 @@ function renderMetadataModal(){
       <div class="meta-info-row"><span class="mir-lbl">Filename</span><span class="mir-val" title="${escapeHtml(a.name)}">${escapeHtml(a.name)}</span></div>
       <div class="meta-info-row"><span class="mir-lbl">Resolution</span><span class="mir-val" id="metaResolution">${resolution}</span></div>
       <div class="meta-info-row"><span class="mir-lbl">File Type</span><span class="mir-val">${a.ext.toUpperCase()}</span></div>
-      <div class="meta-info-row"><span class="mir-lbl">Category</span><span class="mir-val accent">${escapeHtml(m.category||"—")}${isSuggested?` <span style="font-size:10px;color:var(--fg-muted);">(${m.confidence}%)</span>`:""}</span></div>
+      <div class="meta-info-row"><span class="mir-lbl">Category</span><span class="mir-val accent">${escapeHtml(m.category||"â€”")}${isSuggested?` <span style="font-size:10px;color:var(--fg-muted);">(${m.confidence}%)</span>`:""}</span></div>
       <div class="meta-info-row"><span class="mir-lbl">Status</span><span class="mir-val status"><span class="sd" style="background:${sdotColor}"></span>${statusLabel(a.status)}</span></div>
     </div>
   `;
@@ -2922,7 +2981,7 @@ function renderMetadataModal(){
       <div class="kw-add-row"><input class="input" id="mKwInput" placeholder="Type a keyword and press Enter..." /><button class="btn sm" id="mKwAdd">Add</button></div>
     </div>
     <div class="meta-field">
-      <label>Category ${isSuggested?`<span class="mf-counter" style="color:var(--success);">AI Suggested · ${m.confidence}%</span>`:""}</label>
+      <label>Category ${isSuggested?`<span class="mf-counter" style="color:var(--success);">AI Suggested Â· ${m.confidence}%</span>`:""}</label>
       <div class="cat-search" id="mCatSearch">
         <input class="input" id="mCatInput" value="${escapeHtml(m.category||"")}" placeholder="Search or select category..." autocomplete="off" />
         <div class="cs-dropdown" id="mCatDropdown"></div>
@@ -3001,7 +3060,7 @@ function openApiSettings(){
       <div class="api-sec">
         <div class="api-status-banner" id="apiStatusBanner">
           <span class="asb-dot"></span>
-          <div><div class="asb-text" id="apiStatusText">—</div><div class="asb-sub" id="apiStatusSub">—</div></div>
+          <div><div class="asb-text" id="apiStatusText">â€”</div><div class="asb-sub" id="apiStatusSub">â€”</div></div>
         </div>
       </div>
       <div class="api-sec">
@@ -3009,10 +3068,14 @@ function openApiSettings(){
         <div class="api-sec-desc">Choose the Gemini model used for all metadata generation.</div>
         <div class="field" style="margin:0;">
           <select class="select" id="apiModelSelect" style="max-width:320px;">
-            <option value="gemini-2.0-flash">gemini-2.0-flash</option>
-            <option value="gemini-2.5-flash">gemini-2.5-flash</option>
-            <option value="gemini-1.5-flash">gemini-1.5-flash</option>
-            <option value="gemini-2.0-flash-lite">gemini-2.0-flash-lite</option>
+            <option value="gemini-3.6-flash">Gemini 3.6 Flash</option>
+            <option value="gemini-3.5-flash">Gemini 3.5 Flash (Recommended)</option>
+            <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+            <option value="gemini-2.5-flash-lite">Gemini 2.5 Flash-Lite</option>
+            <option value="gemini-3.5-flash-lite">Gemini 3.5 Flash-Lite</option>
+            <option value="gemini-3.1-pro-preview">Gemini 3.1 Pro (PAID)</option>
+            <option value="gemini-3-pro">Gemini 3 Pro (PAID)</option>
+            <option value="gemini-2.5-pro">Gemini 2.5 Pro (PAID)</option>
           </select>
         </div>
       </div>
@@ -3036,7 +3099,7 @@ function openApiSettings(){
         <div class="api-sec-desc">Number of simultaneous metadata requests sent to the Gemini API.</div>
         <div class="api-concurrency">
           <input type="number" class="input" id="apiConcurrencyInput" value="${state.settings.concurrency}" min="1" max="10" />
-          <span class="ac-range-hint">Min 1 · Recommended 2 · Max 10</span>
+          <span class="ac-range-hint">Min 1 Â· Recommended 2 Â· Max 10</span>
         </div>
       </div>
       <div class="api-sec">
@@ -3148,7 +3211,7 @@ function openApiSettings(){
     else showTestResult("error","Test complete","0/"+state.apiKeys.length+" keys valid");
   });
 
-  // Save button — persist and close
+  // Save button â€” persist and close
   modal.querySelector("#apiSaveBtn").addEventListener("click",()=>{
     // Read final values from the modal controls (in case user typed but didn't blur)
     state.settings.model=modal.querySelector("#apiModelSelect").value;
@@ -3177,7 +3240,7 @@ function renderApiKeysList(){
   }
   const activeKey=gemini.nextKey();
   list.innerHTML=state.apiKeys.map((k,i)=>{
-    const masked=k.key.length>12?k.key.slice(0,6)+"••••"+k.key.slice(-4):k.key;
+    const masked=k.key.length>12?k.key.slice(0,6)+"â€¢â€¢â€¢â€¢"+k.key.slice(-4):k.key;
     const isActive=activeKey&&activeKey.key===k.key;
     const statusColor=k.status==='valid'?'var(--success)':k.status==='invalid'?'var(--danger)':k.status==='exhausted'?'var(--warning)':'var(--fg-dim)';
     const editSvg='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>';
@@ -3215,14 +3278,14 @@ function updateApiStatusSummary(){
   if(state.apiKeys.length===0){
     banner.className="api-status-banner err";
     text.textContent="API Not Connected";
-    sub.textContent="No API keys configured — add a key to start generating metadata";
+    sub.textContent="No API keys configured â€” add a key to start generating metadata";
   } else {
     const valid=state.apiKeys.filter(k=>k.status!=="invalid"&&k.status!=="exhausted").length;
     const total=state.apiKeys.length;
     if(valid===0){
       banner.className="api-status-banner err";
       text.textContent="API Not Connected";
-      sub.textContent=`${total} key${total>1?"s":""} added, none valid — test your keys to verify`;
+      sub.textContent=`${total} key${total>1?"s":""} added, none valid â€” test your keys to verify`;
     } else if(valid<total){
       banner.className="api-status-banner warn";
       text.textContent="Partial Configuration";
@@ -3254,8 +3317,8 @@ function initSlider(el, onChange){
 }
 
 /* ---------- Flyout for collapsed sidebar ---------- */
-const FLYOUT_GAP = 10;       // gap between sidebar and flyout (8–12px)
-const FLYOUT_SAFE = 18;      // viewport safe margin (16–20px)
+const FLYOUT_GAP = 10;       // gap between sidebar and flyout (8â€“12px)
+const FLYOUT_SAFE = 18;      // viewport safe margin (16â€“20px)
 
 function ensureFlyout(section){
   let flyout=section.querySelector(".section-flyout");
@@ -3302,7 +3365,7 @@ function ensureFlyout(section){
    its content up to ~82% of the viewport; only after that does the body
    become scrollable. Height + top changes animate via CSS transition.
    overrideNaturalH: when provided (e.g. after a card expand/collapse), use
-   this pre-computed height instead of measuring — enables a single smooth
+   this pre-computed height instead of measuring â€” enables a single smooth
    transition instead of multiple jittery re-measurements. */
 function positionFlyout(flyout, iconRect, arrow, overrideNaturalH){
   const VW=window.innerWidth, VH=window.innerHeight;
@@ -3481,7 +3544,7 @@ function rewireFlyout(sectionName, flyout){
       // Re-query after outerHTML replacement
       const list=$f("#sflyStrategyList");
       if(list){
-        // Click on card body → select strategy
+        // Click on card body â†’ select strategy
         list.querySelectorAll(".ss-row").forEach(row=>{
           row.addEventListener("click",e=>{
             if(e.target.closest("[data-action=toggle]")) return; // toggle button handles its own click
@@ -3496,7 +3559,7 @@ function rewireFlyout(sectionName, flyout){
             toast("Strategy updated",METADATA_STRATEGIES[card.dataset.strategy].name,"info",1800);
           });
         });
-        // Click on toggle → expand/collapse card + reposition flyout with smooth animation
+        // Click on toggle â†’ expand/collapse card + reposition flyout with smooth animation
         list.querySelectorAll(".ss-toggle").forEach(btn=>{
           const handler=(e)=>{
             e.stopPropagation();
@@ -3523,7 +3586,7 @@ function rewireFlyout(sectionName, flyout){
             const finalBodyH = wasExpanded ? (currentBodyH - detailContentH) : (currentBodyH + detailContentH);
             const finalNaturalH = titleH + Math.max(0, finalBodyH);
 
-            // Toggle the class — the grid-template-rows transition starts (220ms)
+            // Toggle the class â€” the grid-template-rows transition starts (220ms)
             card.classList.toggle("expanded");
             btn.setAttribute("aria-expanded", wasExpanded?"false":"true");
             btn.setAttribute("aria-label", wasExpanded?"Show strategy details":"Hide strategy details");
@@ -3686,7 +3749,7 @@ const FAQ_DATA=[
   {q:"Is StockFlow free?",a:"Yes, StockFlow is 100% free. There are no subscriptions, no hidden fees, and no premium tiers. The application runs entirely in your browser."},
   {q:"Does it upload my files?",a:"No. StockFlow processes all files locally in your browser. The only external requests are to the Google Gemini API for metadata generation, and only if you provide your own API key. Your images never leave your computer."},
   {q:"Which file types are supported?",a:"StockFlow supports JPG, JPEG, PNG, EPS, AI, and SVG files. These cover the most common formats used by Adobe Stock and Shutterstock contributors."},
-  {q:"Which AI models are supported?",a:"StockFlow uses Google Gemini AI models including gemini-2.0-flash, gemini-2.5-flash, gemini-1.5-flash, and gemini-2.0-flash-lite. You can use multiple API keys with automatic rotation."},
+  {q:"Which AI models are supported?",a:"StockFlow uses Google Gemini AI models including Gemini 3 Flash and Gemini 3.5 Flash for the best speed and quality ratio."},
   {q:"Can I edit metadata before export?",a:"Absolutely. StockFlow includes a professional metadata editor modal where you can edit titles, descriptions, keywords (as removable chips), and categories. All changes are saved automatically and reflected in the exported CSV."}
 ];
 function renderFaq(){
@@ -3710,7 +3773,7 @@ const ABOUT_FAQ=[
   {q:"Is StockFlow free?",a:"Yes, StockFlow is 100% free. No subscriptions, no hidden fees. It runs entirely in your browser."},
   {q:"Does it upload my files?",a:"No. All file processing happens locally. Only AI metadata requests go to Google Gemini, and only if you provide your own API key."},
   {q:"Where is my data stored?",a:"Your settings and metadata are stored locally in your browser using IndexedDB. Nothing is sent to any server except Google Gemini API for generation."},
-  {q:"Which AI models are supported?",a:"StockFlow uses Google Gemini models including gemini-2.0-flash, gemini-2.5-flash, gemini-1.5-flash, and gemini-2.0-flash-lite with multi-key rotation."},
+  {q:"Which AI models are supported?",a:"StockFlow uses Google Gemini models including Gemini 3 Flash, Gemini 3.5 Flash, and Pro models. The recommended model is Gemini 3 Flash."},
   {q:"Does it support icon sheets?",a:"Yes! StockFlow has a specialized Icon Collection strategy that analyzes every icon individually before generating one optimized metadata package."},
   {q:"Can I edit metadata before export?",a:"Absolutely. The metadata editor modal lets you edit titles, descriptions, keywords as chips, and categories. All changes auto-save."}
 ];
@@ -3750,7 +3813,7 @@ function wire(){
   // About fade-in observer
   const abObserver=new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("visible"); abObserver.unobserve(e.target); } }); }, {threshold:0.1, rootMargin:"0px 0px -50px 0px"});
   $$(".ab-fade-in").forEach(el=>abObserver.observe(el));
-  // Creator link buttons (hidden if no links configured — currently placeholder)
+  // Creator link buttons (hidden if no links configured â€” currently placeholder)
   $$("[data-creator-link]").forEach(b=>{ b.style.display="none"; }); // Hidden until links are configured
   // Footer navigation
   $$("[data-footer-nav]").forEach(b=>b.addEventListener("click",()=>{
@@ -3797,7 +3860,7 @@ function wire(){
       h.appendChild(tip);
     }
   });
-  // Close floating panels when clicking outside (no focus steal — let the click target keep focus)
+  // Close floating panels when clicking outside (no focus steal â€” let the click target keep focus)
   document.addEventListener("click",e=>{
     if(!e.target.closest(".section.floating") && !e.target.closest(".section-head")){
       $$(".section.floating").forEach(s=>{
@@ -3874,7 +3937,7 @@ function wire(){
   uz.addEventListener("drop",e=>{e.preventDefault();uz.classList.remove("drag");handleFiles(e.dataTransfer.files);});
   $("#fileInput").addEventListener("change",e=>{handleFiles(e.target.files);e.target.value="";});
   $("#btnAddMore").addEventListener("click",e=>{ e.stopPropagation(); $("#fileInput").click(); });
-  // API — navbar button opens the global API Settings modal
+  // API â€” navbar button opens the global API Settings modal
   $("#apiPill").addEventListener("click",openApiSettings);
   $("#keyFileInput").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;const text=await f.text();const keys=text.split(/\r?\n/).map(s=>s.trim()).filter(s=>s&&!s.startsWith("#"));let added=0;keys.forEach(k=>{if(!state.apiKeys.some(x=>x.key===k)){state.apiKeys.push({key:k,status:"untested",uses:0,lastError:""});added++;}});e.target.value="";renderApiKeysList();updateApiPill();if(state.assets.length===0)renderGallery();scheduleSave();toast("Keys imported",`${added} of ${keys.length} added`,"success");});
 
@@ -3913,7 +3976,7 @@ function wire(){
   $("#btnGenerateAll").addEventListener("click",()=>{const sel=state.assets.filter(a=>state.selected.has(a.id));const targets=sel.length?sel.filter(a=>a.status==="pending"||a.status==="error"):null;if(sel.length&&!targets?.length){toast("Selected assets already processed","","warn");return;}startBatch(targets);});
   $("#btnSelectAll").addEventListener("click",()=>{if(state.selected.size===state.assets.length)state.selected.clear();else state.assets.forEach(a=>state.selected.add(a.id));renderGallery();});
   $("#btnRemoveSel").addEventListener("click",()=>{if(!state.selected.size)return;if(!confirm(`Remove ${state.selected.size} asset(s)?`))return;state.assets=state.assets.filter(a=>!state.selected.has(a.id));state.selected.clear();renderAll();scheduleSave();toast("Removed","","info");});
-  // Retry Failed — only retry assets with status "error"
+  // Retry Failed â€” only retry assets with status "error"
   $("#btnRetryFailed").addEventListener("click",()=>{
     const failed=state.assets.filter(a=>a.status==="error");
     if(failed.length===0){ toast("No failed assets","","warn"); return; }
@@ -3921,7 +3984,7 @@ function wire(){
     startBatch(failed);
     toast("Retrying failed", `${failed.length} asset(s)`, "info", 2000);
   });
-  // Retry Selected — only retry manually selected assets
+  // Retry Selected â€” only retry manually selected assets
   $("#btnRetrySelected").addEventListener("click",()=>{
     const sel=state.assets.filter(a=>state.selected.has(a.id));
     if(sel.length===0){ toast("Select assets to retry","","warn"); return; }
@@ -3944,7 +4007,7 @@ function wire(){
       else if(action==="upload"){ $("#fileInput").click(); }
       return;
     }
-    // Per-field copy buttons (title / keywords / description) — copies text, shows check feedback
+    // Per-field copy buttons (title / keywords / description) â€” copies text, shows check feedback
     const copyBtn=e.target.closest("[data-copy]");
     if(copyBtn){
       e.stopPropagation();
@@ -3970,7 +4033,7 @@ function wire(){
       },()=>toast("Clipboard blocked","Copy manually","error"));
       return;
     }
-    // "Copy All" button — copies title + description + keywords + category as a formatted block
+    // "Copy All" button â€” copies title + description + keywords + category as a formatted block
     const copyAllBtn=e.target.closest("[data-copy-all]");
     if(copyAllBtn){
       e.stopPropagation();
@@ -3988,7 +4051,7 @@ function wire(){
       },()=>toast("Clipboard blocked","Copy manually","error"));
       return;
     }
-    // "Remove" button — removes the asset from the gallery
+    // "Remove" button â€” removes the asset from the gallery
     const removeBtn=e.target.closest("[data-remove]");
     if(removeBtn){
       e.stopPropagation();
@@ -4072,6 +4135,9 @@ async function init(){
   if(saved){
     if(saved.settings)Object.assign(state.settings,saved.settings);
     if(state.settings.concurrency === 3) state.settings.concurrency = 2;
+    // Migrate deprecated model strings to current default
+    const validModels = ["gemini-3.6-flash","gemini-3.5-flash","gemini-2.5-flash","gemini-2.5-flash-lite","gemini-3.5-flash-lite","gemini-3.1-pro-preview","gemini-3-pro","gemini-2.5-pro"];
+    if(!validModels.includes(state.settings.model)) { state.settings.model = "gemini-3.5-flash"; }
     if(saved.apiKeys)state.apiKeys=saved.apiKeys.map(k=>({...k,status:k.status||"untested",uses:k.uses||0,lastError:k.lastError||""}));
     if(saved.templates)state.templates=saved.templates;
     // Assets are intentionally NOT loaded from IDB so the workspace resets on refresh
